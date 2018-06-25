@@ -21,7 +21,7 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 $table-text-align: left !default;
 
 // Width of the content area
-$content-width:    1120px !default;
+$content-width:    1020px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
@@ -45,8 +45,12 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
-  "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting"
-;
+	// Jekyll Styles
+	"minima/base",
+	"minima/layout",
+	"minima/syntax-highlighting",
+
+	// custome-styles
+	"custom-styles/navigation",
+	"custom-styles/main-col";
 

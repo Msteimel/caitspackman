@@ -1,0 +1,29 @@
+
+.trigger {
+
+	.main-nav {
+		display: flex;
+		list-style: none;
+	}
+
+	li {
+		text-align: center;
+		width: 25%;
+	}
+
+	.nav-2 {
+		transition: 3s ease;
+
+		&:hover {
+
+			.sub-nav {
+				display: block;
+			}
+		}
+	}
+
+	.sub-nav {
+		display: none;
+		list-style: none;
+	}
+}
