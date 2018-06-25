@@ -1,0 +1,31 @@
+$sp: 350;
+$mp: 479;
+$ml: 667;
+$tp: 800;
+$tl: 1100;
+$dk: 1101;
+$lf: 1921;
+
+@mixin breakpoint($point) {
+	@if $point == small-portrait {
+		@media (max-width: $sp + px) { @content; }
+	}
+	@else if $point == mobile-portrait {
+		@media (max-width: $mp + px) { @content; }
+	}
+	@else if $point == mobile-landscape {
+		@media (max-width: $ml + px) { @content; }
+	}
+	@else if $point == tablet-portrait {
+		@media (max-width: $tp + px)  { @content; }
+	}
+	@else if $point == tablet-landscape {
+		@media (max-width: $tl + px)  { @content; }
+	}
+	@else if $point == desktop {
+		@media (min-width: $dk + px)  { @content; }
+	}
+	@else if $point == large-format {
+		@media (min-width: $lf + px)  { @content; }
+	}
+}
