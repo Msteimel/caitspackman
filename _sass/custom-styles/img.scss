@@ -1,0 +1,22 @@
+
+.banner-image {
+	figure {
+		padding-top: calc(3648/5472 * 100%);
+	}
+}
+
+
+figure {
+	padding-top: 100%;
+	position: relative;
+
+	.scale {
+		max-width: 100%;
+	}
+
+	img {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
