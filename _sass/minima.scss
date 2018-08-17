@@ -26,6 +26,13 @@ $content-width:    1020px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
+// MY ADDED VARIABLES
+$white: #fff;
+$black: #222;
+$beige: #F8F8F5;
+
+$em-base: 16px;
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
@@ -43,18 +50,33 @@ $on-laptop:        800px !default;
   font-size: $base-font-size * $ratio;
 }
 
+
+@mixin clearfix {
+ // For modern browsers
+  &:before,
+  &:after {
+    content:" ";
+    display:table;
+  }
+
+  &:after {
+    clear:both;
+  }
+}
+
 // Import partials.
 @import
-	// Jekyll Styles
-	"minima/base",
-	"minima/layout",
-	"minima/syntax-highlighting",
-
-	// custome-styles
 	"custom-styles/mixins",
+  // Jekyll Styles
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting",
+
+  // custome-styles
 	"custom-styles/navigation",
 	"custom-styles/main-col",
 	"custom-styles/img",
-	"custom-styles/categories";
+	"custom-styles/categories",
+  "custom-styles/page-callout";
 	
 

@@ -3,11 +3,36 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
+         <ul class="footer-nav">
+            <li class="nav-1">
+              <a href="/about/">About</a>
+            </li>
+            <li class="nav-2">
+              <a href="#">Portfolio</a>
+            </li>
+            <li class="nav-3">
+              <a href="/inquiries/">Inquiries</a>
+            </li>
+          </ul>
+      </div>
+
+            <div class="footer-col footer-col-2">
+        <ul class="list-social">
+          <li>Cait Spackman</li>
+          <li><a href="mailto:caitspackman@emailaddress.com">cait.spackman@gmail.com</a></li>
+          <li><a href="tel:"> 319-878-3222</a></li>
+          <li>{%- include social.html -%}</li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+       <img src="/images/logos/logo-footer.png" alt="scale">
+
+       <!--  <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
               {{ site.author | escape }}
@@ -18,16 +43,12 @@
             {%- if site.email -%}
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
-        </ul>
+        </ul> -->
       </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+
+      
     </div>
 
   </div>

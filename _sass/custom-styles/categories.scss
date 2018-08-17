@@ -1,5 +1,8 @@
 
 .categories {
+	margin: $spacing-unit auto $spacing-unit*2;
+	padding: 2em 0;
+	
 	.cat-list {
 		display: flex;
 		flex-wrap: wrap;
@@ -8,31 +11,148 @@
 		width: 100%;
 	}
 
-	.cat-main {
-		order: 1;
-		width: 50%;
-		
-		@include breakpoint(tablet-portrait){
-			width: 100%;
+	figure {
+		position: relative;
+			
+		.cat-text {
+			img{
+				box-shadow: none;
+			}
 		}
 
-		figure {
-			margin-bottom: 0;
-			padding-top: calc(3648/5472 * 100%);
+	}
+
+	.category {
+		box-sizing: border-box;
+		padding: 0 0.5em;
+		
+		a {
+			display: block;
+			position: relative;
 		}
 	}
 
-	.cat-sub {
-		order: 2;
-		width: calc(100%/3);
+	.cat-engagment {
+		order: 1;
+		width: 64%;
 		
 		@include breakpoint(mobile-landscape){
-			width: 100%;
+			margin: 0 auto;
+			// width: 75%;
 		}
 
-		figure {
-			margin-bottom: 0;
-			padding-top: calc(3648/5472 * 100%);
+		figure{
+			padding-top: percentage(549/629);
+			
+			img {
+				border: 5px solid #222;
+			}
+		}
+
+		.cat-text {
+			left: -50px;
+			position: absolute;
+			top: -25px;
+			transform: rotate(-5deg);
+			z-index: 2;
+			
+			@include breakpoint(tablet-landscape){
+				left: 0;
+				max-width: 75%;
+			}
+		}
+
+	}
+
+	.cat-portrait {
+		order: 2;
+		width: 36%;
+		
+		@include breakpoint(mobile-landscape){
+			margin: 0 auto;
+			// width: 75%;
+		}
+		
+		figure{
+			padding-top: percentage(575/345);
+			
+				img {
+					border: 5px solid #222;
+					width: 100%;
+				}
+		}
+
+		.cat-text {
+			position: absolute;
+			bottom: -68px;
+			left: 0;
+			z-index: 2;
+			
+			@include breakpoint(tablet-landscape){
+				bottom: -30px;
+			}
+		}
+	}
+
+	.cat-family {
+		order: 3;
+		width: 50%;
+		
+		@include breakpoint(mobile-landscape){
+			margin: 0 auto;
+		}
+		
+		figure{
+			padding-top: percentage(407/496);
+			
+			img {
+				border: 5px solid #222;
+			}
+		}
+
+		.cat-text {
+			position: absolute;
+			bottom: -65px;
+			right: -43px;
+			z-index: 2;
+			
+			@include breakpoint(tablet-landscape){
+				max-width: 75%;
+				right: -20px;
+			}
+		}
+	}
+
+	.cat-wedding {
+		order: 4;
+		padding-top: 0.5em;
+		width: 50%;
+		
+		@include breakpoint(mobile-landscape){
+			margin: 0 auto;
+			// width: 75%;
+		}
+		
+		figure{
+			padding-top: percentage(397/543);
+			
+			img {
+				border: 5px solid #222;
+			}
+		}
+
+		.cat-text {
+			position: absolute;
+			bottom: -100px;
+			right: -51px;
+			transform: rotate(-10deg);
+			z-index: 2;
+			
+			@include breakpoint(tablet-landscape){
+				bottom: -50px;
+				max-width: 75%;
+				right: 0;
+			}
 		}
 	}
 }

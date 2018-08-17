@@ -1,0 +1,58 @@
+.page-callout {
+	background-color: white;
+	box-shadow: 0 5px 15px #aaa;
+	margin: 4em auto;
+	
+	h1 {
+		font-size: $em-base * 2;
+		margin-bottom: 0;
+		padding: 1em 0 0.5em;
+		text-align: center;
+		
+		@include breakpoint (tablet-portrait) {
+			font-size: $em-base * 2.5;
+		}
+
+		@include breakpoint (mobile-landscape) {
+			font-size: $em-base * 2;
+		}
+	}
+
+	h2 {
+		font-size: $em-base * 1.5;
+		margin-bottom: 0;
+		padding: 1em 0 0.5em;
+		text-align: center;
+		
+		@include breakpoint (tablet-portrait) {
+			// font-size: $em-base * 2.5;
+		}
+
+		@include breakpoint (mobile-landscape) {
+			// font-size: $em-base * 2;
+		}
+	}
+
+	p { 
+		color: $grey-color-dark;
+		font-size: $em-base;
+		line-height: $base-line-height;
+		padding: 0 3em 1em;
+		text-align: left;
+		
+		@include breakpoint (tablet-portrait) {
+			font-size: $em-base * 1;
+		}
+	}
+
+	.page-callout--price {
+		display: flex;
+		justify-content: space-around;
+		padding: 2em;
+	}
+
+	.page-callout--col {
+		// align-self: center;
+		 width: 50%;
+	}
+}	

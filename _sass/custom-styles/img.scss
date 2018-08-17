@@ -1,5 +1,9 @@
 
 .banner-image {
+	background: url(/images/nine.jpg) no-repeat center right fixed; 
+	background-size: cover;
+	min-height: 700px;
+
 	figure {
 		padding-top: calc(3648/5472 * 100%);
 	}

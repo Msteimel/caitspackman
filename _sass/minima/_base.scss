@@ -15,9 +15,12 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+  font: -font-weight #{-font-size}/#{-line-height} -font-family;
+  color: -color;
+ background: rgb(229,221,211);
+background: -webkit-linear-gradient(bottom right, rgba(229,221,211,1) 0%, rgba(245,236,225,1) 100%);
+background: -o-linear-gradient(bottom right, rgba(229,221,211,1) 0%, rgba(245,236,225,1) 100%);
+background: linear-gradient(to top left, rgba(229,221,211,1) 0%, rgba(245,236,225,1) 100%);
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -118,6 +121,11 @@ a {
 
   .social-media-list &:hover {
     text-decoration: none;
+    
+    li {
+      display: inline-block;
+      padding-right: calc($spacing-unit*0.25);
+    }
 
     .username {
       text-decoration: underline;
@@ -214,11 +222,16 @@ pre {
     height: 16px;
     display: inline-block;
     fill: #{$grey-color};
-    padding-right: 5px;
+    padding-right: 2px;
     vertical-align: text-top;
 }
 
 .social-media-list {
+      li {
+        display: inline-block;
+        padding-right: $spacing-unit*0.25;
+      }
+
   li + li {
     padding-top: 5px;
   }
