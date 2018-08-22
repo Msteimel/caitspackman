@@ -9,7 +9,8 @@ layout: default
 <section aria-label="Main Callout" class="main-col main-callout">
   <h1 class="main-col-title">Genuine Moments of Joy</h1>
   <!-- <figure><img src="/images/GMJ.png" alt="Genuine Moments of Joy" class="scale"></figure> -->
-  <p>My goal is to capture life at the purist moment. The spark the makes a photograph come to life can't be faked. The joy you feel looking at your finance, the excitement of graduation, or the eternal love on your wedding day are the essence of life. It is my job to capture these moments for you to cherish.</p>
+  <p>Turning real happiness into photographs</p>
+  <p>&ndash; Eastern iowa &ndash;</p>
 </section>
 
 <section class="categories main-col">

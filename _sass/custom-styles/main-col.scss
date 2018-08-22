@@ -1,8 +1,8 @@
 
 .main-col {
 	margin: 0 auto;
-	max-width: 800px;
-	width: 85%;
+	max-width: 1100px;
+	// width: 85%;
 
 	.main-col-content {
 		margin-left: 1em;
@@ -12,12 +12,13 @@
 .main-callout {
 	background-color: white;
 	box-shadow: 0 5px 15px #aaa;
-	margin: 4em auto;
+	padding: 2em;
+	margin: 2em auto;
 	
 	h1 {
 		font-size: $em-base * 3;
 		margin-bottom: 0;
-		padding: 1em 0 0.5em;
+		padding: 0em 1em 0.5em;
 		text-align: center;
 		
 		@include breakpoint (tablet-portrait) {
@@ -33,7 +34,8 @@
 		color: $grey-color-dark;
 		font-size: $em-base * 1.125;
 		line-height: $base-line-height;
-		padding: 0 3em 3em;
+		margin: 0;
+		padding-bottom: $spacing-unit/2;
 		text-align: center;
 		
 		@include breakpoint (tablet-portrait) {

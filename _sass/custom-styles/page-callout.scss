@@ -37,7 +37,9 @@
 		color: $grey-color-dark;
 		font-size: $em-base;
 		line-height: $base-line-height;
-		padding: 0 3em 1em;
+		margin: auto;
+		max-width: 750px;
+		padding: 0 3em 2em;
 		text-align: left;
 		
 		@include breakpoint (tablet-portrait) {
@@ -48,11 +50,15 @@
 	.page-callout--price {
 		display: flex;
 		justify-content: space-around;
-		padding: 2em;
+		padding: 0em 2em 2em;
 	}
 
 	.page-callout--col {
-		// align-self: center;
+		padding: 0 1em;
 		 width: 50%;
+		 
+		 h4 {
+		 	font-size: $em-base * 1.125;
+		 }
 	}
 }	
