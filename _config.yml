@@ -14,13 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Cait Spackman Photography
-email: your-email@example.com
+email: cait.spackman@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   My goal is to capture life at the purist moment. The spark the makes a photograph come to life can't be faked. The joy you feel looking at your finance, the excitement of graduation, or the eternal love on your wedding day are the essence of life. It is my job to capture these moments for you to cherish.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.caitspackman.com/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-facebook_username:  jekyll
+instagram_username:  caitspackmanphotography
 
 # Build settings
 markdown: kramdown

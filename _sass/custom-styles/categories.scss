@@ -19,26 +19,50 @@
 
 	figure {
 		box-shadow: 0 5px 9px #aaa;
-		position: relative;
 		margin-bottom: 0;
+		position: relative;
+		transition: transform 10s linear;
+
+		&:hover, &:focus {
+			transform: scale(1.125);
+		}
 		
-		img {
+		img {;
 			width: 100%;
 		}
 			
-		.cat-text {
-			img{
-				box-shadow: none;
-			}
+	}
+
+	.cat-text {
+		background-color: rgba(226, 225, 255, 0.5);
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		
+		@include breakpoint(mobile-landscape) {
+			// height: 140px;
+		}
+			
+		img{
+			box-shadow: none;
 		}
 	}
 
 	.category {
 		box-sizing: border-box;
 		padding: 0 0.5em;
+		overflow: hidden;
+		
+		@include breakpoint(mobile-landscape){
+			margin: 1em 0;
+		}
 		
 		a {
+			box-shadow: 0 5px 15px #aaa;
 			display: block;
+			overflow: hidden;
 			position: relative;
 		}
 	}
@@ -56,29 +80,14 @@
 		}
 
 		.cat-text {
-			left: -50px;
-			position: absolute;
-			top: -25px;
-			transform: rotate(-5deg);
-			z-index: 2;
-			
-			@include breakpoint(tablet-landscape){
-				left: 0;
-				max-width: 75%;
-			}
-
-			@include breakpoint(mobile-landscape){
-    			margin: 0px auto;
-			    position: relative;
-			    top: -34px;
-				transform: rotate(3deg);
-			}
-
 			img {
+				margin: auto;
+				width: 40%;
+
 				@include breakpoint(mobile-landscape){
     				display: block;
 				    margin: auto;
-				    width: 75%;
+				    width: 50%;
 				}
 			}
 		}
@@ -96,42 +105,28 @@
 			padding-top: percentage(575/345);
 			
 			@include breakpoint(mobile-landscape){
-				// border: 5px solid $black;
-				margin: 0 auto 15px;
+				margin: 0 auto 0;
 				overflow: hidden;
 				padding-top: 121.666667%;
 				width: 100%;
 			}
 			
-				img {
-					@include breakpoint(mobile-landscape) {
-						border: 0;
-					}
+			img {
+				@include breakpoint(mobile-landscape) {
+					border: 0;
 				}
+			}
 		}
 
 		.cat-text {
-			position: absolute;
-			bottom: -40px;
-			left: 0;
-			z-index: 2;
-			
-			@include breakpoint(tablet-landscape){
-				bottom: -30px;
-			}
-
-			@include breakpoint(mobile-landscape){
-				margin: 0 auto;
-				position: relative;
-				top: -29px;
-				width: 75%;
-			}
 
 			img {
+				width: 75%;
+
 				@include breakpoint(mobile-landscape){
     				display: block;
 				    margin: auto;
-				    width: 75%;
+				    width: 50%;
 				}
 			}
 		}
@@ -140,12 +135,8 @@
 	.cat-family {
 		position: relative;
 		order: 3;
-		top: -1em;
+		top: 0;
 		width: 50%;
-		
-		@include breakpoint(tablet-portrait){
-			top: 0;
-		}
 		
 		@include breakpoint(mobile-landscape){
 			width: 100%;
@@ -156,26 +147,14 @@
 		}
 
 		.cat-text {
-			position: absolute;
-			bottom: -65px;
-			right: -43px;
-			z-index: 2;
-			
-			@include breakpoint(tablet-landscape){
-				max-width: 75%;
-				right: -20px;
-			}
-			@include breakpoint(mobile-landscape){
-    			margin: 0px auto;
-			    position: relative;
-			    top: -40px;
-			}
 
 			img {
+				width: 40%;
+							
 				@include breakpoint(mobile-landscape){
     				display: block;
 				    margin: auto;
-				    width: 75%;
+				    // width: 50%;
 				}
 			}
 		}
@@ -194,31 +173,18 @@
 			padding-top: percentage(397/543);
 		}
 
-		.cat-text {
-			position: absolute;
-			bottom: -100px;
-			right: -51px;
-			transform: rotate(-10deg);
-			z-index: 2;
-			
-			@include breakpoint(tablet-landscape){
-				bottom: -50px;
-				max-width: 75%;
-				right: 0;
-			}
 
-			@include breakpoint(mobile-landscape){
-    			margin: 0px auto;
-			    position: relative;
-			    top: -37px;
-			    transform: rotate(2deg);
-			}
+
+
+		.cat-text {
 
 			img {
+				width: 40%;
+				
 				@include breakpoint(mobile-landscape){
     				display: block;
 				    margin: auto;
-				    width: 75%;
+				    // width: 50%;
 				}
 			}
 		}

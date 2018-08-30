@@ -98,10 +98,15 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-family: $header-font-family;
+  font-style: italic;
+  font-weight: 700;
 }
 
-
+p {
+  font-family: $base-font-family;
+  font-weight: 200;
+}
 
 /**
  * Links

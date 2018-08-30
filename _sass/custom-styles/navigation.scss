@@ -3,25 +3,21 @@
 	margin: 2em;
 }
 
-.trigger {
-	min-width: 400px;
 
-	.main-nav {
-		display: flex;
-		justify-content: flex-end;
-		list-style: none;
-		margin: 0;
-	}
+.main-nav {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	margin: 0;
 
 	li {
 		font-size: 0.75rem;
 		padding: 0.25rem 0 0;
 		margin-left: 4rem;
 		text-align: center;
-		// width: 20%;
 		
-		&:hover, &:focus{
-			// border-top: 1px solid $black;
+		@include breakpoint(mobile-landscape) {
+			margin-left: 2rem;
 		}
 	}
 

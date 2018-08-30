@@ -22,6 +22,11 @@
   margin-bottom: 0;
   position: absolute;
   top: -36%;
+  
+  @include breakpoint(mobile-landscape) {
+    top: 0;
+    width: 20%;
+  }
 
   &,
   &:visited {
@@ -33,6 +38,7 @@
   @include clearfix;
   align-items: baseline;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   padding: 0 0 1.25rem;
   position: relative;
@@ -56,13 +62,13 @@
   }
 
   @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
+    // position: absolute;
+    // top: 9px;
+    // right: $spacing-unit / 2;
+    // background-color: $background-color;
+    // border: 1px solid $grey-color-light;
+    // border-radius: 5px;
+    // text-align: right;
 
     label[for="nav-trigger"] {
       display: block;
@@ -207,6 +213,10 @@
     margin: 0 auto;
     text-align: center;
     width: 75%;
+  }
+
+  li {
+    padding: 0.125em 0;
   }
 
   li:last-of-type(n+1) {

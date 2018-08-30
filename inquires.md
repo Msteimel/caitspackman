@@ -14,7 +14,6 @@ permalink: /inquiries/
        <li>Hand-bound wedding album with prints of your choice - $400</li>
      </ul>
      <h4>Engagements - $400</h4>
-
    </div>
    <div class="page-callout--col">
      <h4>Individual portraits - $120</h4>
