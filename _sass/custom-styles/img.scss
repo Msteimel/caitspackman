@@ -1,12 +1,15 @@
 
 .banner-image {
-	background: url(/images/nine.jpg) no-repeat center right fixed; 
-	background-size: cover;
-	min-height: 700px;
-
-	figure {
-		padding-top: calc(576/1180 * 100%);
+	img {
+		@include breakpoint(tablet-portrait) {
+			margin-top: 6em;
+		}
+		width: 100%;
 	}
+}
+
+cycle-slideshow {
+	z-index: 1;
 }
 
 
